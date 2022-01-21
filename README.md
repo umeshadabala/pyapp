@@ -9,4 +9,3 @@ This will no longer have any future releases
 <br>
 Screenshot
 ![PyApp](pyapp.png)
-

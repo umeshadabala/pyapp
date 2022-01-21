@@ -1,5 +1,5 @@
 # pyapp
-This application contains many popular default applications that comes with windows
+This application contains few popular python apps and games
 <br>
 Notepad is removed due to an issue
 <br>

@@ -1,4 +1,4 @@
-#om🕉
+# om🕉
 from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
@@ -23,18 +23,18 @@ from datetime import datetime
 from random import randint
 from random import choice
 import turtle
-s=Tk()
+
+s = Tk()
 s.title('ALL IN ONE PYTHON APPS')
 s.geometry('500x500')
-s.resizable(0,0)
+s.resizable(0, 0)
 s.config(bg='blue')
 
+
 def calculator():
-
-
     root = Tk()
     root.title("Simple Calculator")
-   
+
     e = Entry(root, width=35, borderwidth=5)
     e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
@@ -141,8 +141,9 @@ def calculator():
     button_divide.grid(row=6, column=2)
 
     root.mainloop()
-def col():
 
+
+def col():
     class main:
         def __init__(self, master):
             self.master = master
@@ -205,16 +206,13 @@ def col():
 
     if __name__ == '__main__':
         root = Toplevel()
-        
+
         main(root)
         root.title('Paint App')
         root.mainloop()
 
 
-
-
 def todo():
-
     root = Toplevel(s)
     root.title('ToDo List!')
 
@@ -384,11 +382,13 @@ def todo():
     delete_crossed_button.grid(row=0, column=4)
 
     root.mainloop()
+
+
 def tic():
     root = Toplevel()
-   
+
     root.title('Tic-Tac-Toe')
-    root.resizable(0,0)
+    root.resizable(0, 0)
     # root.geometry("1200x710")
 
     # X starts so true
@@ -827,6 +827,8 @@ def snake():
           bg="white").grid()
     scoreboard.grid(column=0, row=2)
     root.mainloop()
+
+
 def wea():
     HEIGHT = 500
     WIDTH = 600
@@ -859,7 +861,7 @@ def wea():
         label['text'] = format_response(weather)
 
     root = Toplevel()
-   
+
     root.title('weather')
     canvas = Canvas(root, height=HEIGHT, width=WIDTH)
     canvas.pack()
@@ -882,6 +884,7 @@ def wea():
     label.place(relwidth=1, relheight=1)
 
     root.mainloop()
+
 
 def wj():
     root = Toplevel()
@@ -979,19 +982,19 @@ def wj():
     root.mainloop()
 
 
+t = Label(s, text='time', font=("Helvetica", 20)).place(x=350, y=55)
+t1 = Label(s, text='WELCOME TO ALL IN ONE PYTHON APPS', font=("Helvetica", 10)).place(x=50, y=55)
+t2 = Label(s, text='more apps coming soon', font=("Helvetica", 20)).place(x=200, y=200)
+t3 = Label(s, text='thanks for installing me ', font=("Helvetica", 15)).place(x=200, y=250)
+b1 = Button(s, text='calculator', command=calculator).place(x=50, y=150)
+b2 = Button(s, text='paint', command=col).place(x=50, y=200)
+b3 = Button(s, text='todo', command=todo).place(x=50, y=250)
+b4 = Button(s, text='tic tac toe', command=tic).place(x=50, y=300)
+b6 = Button(s, text='snake', command=snake).place(x=50, y=350)
+b7 = Button(s, text='weather', command=wea).place(x=50, y=400)
+b8 = Button(s, text='word jumble game', command=wj).place(x=50, y=450)
 
 
-t=Label(s,text='time',font=("Helvetica",20)).place(x=350,y=55)
-t1=Label(s,text='WELCOME TO ALL IN ONE PYTHON APPS',font=("Helvetica",10)).place(x=50,y=55)
-t2=Label(s,text='more apps coming soon',font=("Helvetica",20)).place(x=200,y=200)
-t3=Label(s,text='thanks for installing me ',font=("Helvetica",15)).place(x=200,y=250)
-b1=Button(s,text='calculator',command=calculator).place(x=50,y=150)
-b2=Button(s,text='paint',command=col).place(x=50,y=200)
-b3=Button(s,text='todo',command=todo).place(x=50,y=250)
-b4=Button(s,text='tic tac toe',command=tic).place(x=50,y=300)
-b6=Button(s,text='snake',command=snake).place(x=50,y=350)
-b7=Button(s,text='weather',command=wea).place(x=50,y=400)
-b8=Button(s,text='word jumble game',command=wj).place(x=50,y=450)
 def clock():
     hour = time.strftime("%I")
     minute = time.strftime("%M")
@@ -1004,14 +1007,12 @@ def clock():
     my_label.after(1000, clock)
 
 
-
-
 def update():
     my_label.config(text="New Text")
 
 
 my_label = Label(s, text="", font=("Helvetica", 15), fg="green", bg="black")
-my_label.place(x=300,y=100)
+my_label.place(x=300, y=100)
 clock()
 
 # my_label.after(5000, update)
